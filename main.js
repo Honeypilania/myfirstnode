@@ -43,3 +43,29 @@ var name = "Honey Pilania";
 
 module.exports.abc =name;
 
+// let keyword, scope variable
+let a=30;
+//let a=40;    // you can't define like that..!
+
+// you can define or take inside function because it is scope variable/method
+function abc(){
+    let a=40;
+    console.log(a);
+}
+
+
+console.log(a);
+
+abc();
+
+
+// const as object and its value can be changed bcz we use it as object
+
+const user1 = {
+    name :"Honey Pilania",
+    age : 23
+}
+
+    user1.email = "honey.pilania@socwisetechnologies.com";
+
+console.log(user1);
