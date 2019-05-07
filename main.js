@@ -37,3 +37,9 @@ var add=(a,b)=>{
 }
 add(5,12);
 
+
+//use export module for fetch Data
+var name = "Honey Pilania";
+
+module.exports.abc =name;
+
