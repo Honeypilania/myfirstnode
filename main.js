@@ -26,3 +26,14 @@ var Add = function(a,b){
 
 Add(2,9);
 
+// Arrow function
+var user=()=>console.log("This is arrow function");
+user();
+
+// Arrow function with Argu..
+var add=(a,b)=>{
+    var c = a+b;
+    console.log("Addition of "+a+ " and " +b+ " = " +c);
+}
+add(5,12);
+
