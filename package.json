@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Honeypilania/myfirstnode/issues"
   },
-  "homepage": "https://github.com/Honeypilania/myfirstnode#readme"
+  "homepage": "https://github.com/Honeypilania/myfirstnode#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
 }
