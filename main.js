@@ -59,13 +59,62 @@ console.log(a);
 abc();
 
 
-// const as object and its value can be changed bcz we use it as object
+// you will be alos use replace + operator like that...
 
-const user1 = {
-    name :"Honey Pilania",
-    age : 23
+
+   var  name ="Honey Pilania";
+   var  age = 23;
+
+
+console.log(`Hi ${name} your age is ${age}`);
+
+// class and constructor
+
+class User{
+        constructor(name,age,email)
+        {
+            this.name = name;
+            this.age = age;
+            this.email = email;
+        }
+
+        getname(){
+            return this.name;
+        }
+        getage(){
+            return this.age;
+        }
+        getemail(){
+            return this.email;
+        }
 }
 
-    user1.email = "honey.pilania@socwisetechnologies.com";
+    var user = new User("Honey","23","honeypilania666@gmail.com");
+    console.log(user.getname());
 
-console.log(user1);
+    // prototype means you can add property and method in parent method with help of child method
+    // As we use in oops inherit the class here we use prototype in node.
+
+   var student = function(){
+       this.name = 'name';
+       this.age = 'age';
+   }
+
+   student.prototype={
+       getname: function(){
+        return this.name;
+       }
+   }
+ var students = new student;
+   console.log(students.name);
+
+   //Imoporting Modules Functionality from addition.js
+
+   var module1 = require("./addition");
+
+   console.log(module1.add());
+
+
+    console.log(module1.add1());
+
+   console.log(module1.add2());
